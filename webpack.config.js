@@ -22,6 +22,12 @@ module.exports = {
       {
         test: /\.scss$/,
         loader: 'scss-loader'
+      },
+      { test: /\.(woff|woff2|ttf)$/i,
+        type: 'asset/resource'
+      },
+      { test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource'
       }
     ]
   },
