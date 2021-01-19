@@ -1,0 +1,6 @@
+# modules to ignore
+/node_modules
+
+# files to ignore
+.babelrc
+.yo-rc.json
