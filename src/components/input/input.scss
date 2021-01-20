@@ -1,0 +1,37 @@
+@import '../../../assets/scss/const';
+
+.input {
+  height: 67px;
+  width: 320px;
+  margin-bottom: 20px;
+
+  &.__label {
+    font-family: $bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: $DARK_SHADE_100;
+  }
+
+  &.__input {
+    height: 18px;
+    width: 290px;
+    padding: 13px;
+    border: 1px solid $DARK_SHADE_25;
+    border-radius: 3px;
+    font-family: $regular;
+    font-size: 14px;
+    line-height: 18px;
+    color: $DARK_SHADE_75;
+
+    &::placeholder {
+      color: $DARK_SHADE_25;
+    }
+
+    &:hover {
+      border: 1px solid $DARK_SHADE_75;
+      color: $DARK_SHADE_75;
+    }
+  }
+}

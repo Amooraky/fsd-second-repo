@@ -1,6 +1,9 @@
+include ../components/input/input.pug
+
 doctype html
 html
   head
     title Test Document
   boby
-    h1 Hello from Pug.
+    +input("Text Field", "Placeholder", "label")
+    +input("And Another One", "Email", "label2")

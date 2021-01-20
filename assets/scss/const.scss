@@ -1,0 +1,26 @@
+// Colors.
+$DARK_SHADE_100: #1F2041;
+$DARK_SHADE_75: rgba(#1F2041, .75);
+$DARK_SHADE_50: rgba(#1F2041, .5);
+$DARK_SHADE_25: rgba(#1F2041, .25);
+$DARK_SHADE_5: rgba(#1F2041, .05);
+$PURPLE: #BC9CFF;
+$GREEN: #6FCF97;
+
+// Fonts.
+@font-face {
+  font-family: "montserrat-regular";
+  src: url("/assets/fonts/montserrat-regular/Montserrat-Regular.svg") format("svg"),
+       url("/assets/fonts/montserrat-regular/Montserrat-Regular.ttf") format("ttf"),
+       url("/assets/fonts/montserrat-regular/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "montserrat-bold";
+  src: url("/assets/fonts/montserrat-bold/Montserrat-Bold.svg") format("svg"),
+       url("/assets/fonts/montserrat-bold/Montserrat-Bold.ttf") format("ttf"),
+       url("/assets/fonts/montserrat-bold/Montserrat-Bold.woff") format("woff");
+}
+
+$regular: "montserrat-regular";
+$bold: "montserrat-bold";
