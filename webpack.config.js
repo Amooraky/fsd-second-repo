@@ -2,11 +2,21 @@ const path = require('path');
 const webpack = require('webpack');
 
 const TerserPlugin = require('terser-webpack-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
-  plugins: [new webpack.ProgressPlugin()],
+  devServer: {
+    contentBase: "./dist",
+    port: 9000
+  },
+  plugins: [
+    new webpack.ProgressPlugin(),
+    new HTMLWebpackPlugin({
+      template: './src/pug/index.pug'
+    })
+  ],
 
   module: {
     rules: [
@@ -46,7 +56,7 @@ module.exports = {
       chunks: 'async',
       minChunks: 1,
       minSize: 30000,
-      name: true
+      name: false
     }
   }
 }
