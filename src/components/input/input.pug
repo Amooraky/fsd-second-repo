@@ -1,0 +1,4 @@
+mixin input(label, placeholder, name)
+  .input
+    label.input.__label(for=`${name}`)= label
+    input.input.__input(placeholder=`${placeholder}`)
